@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regresión INE</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Regresión Polinomial con Datos del INE</h1>
+
+  <div class="section">
+    <h2>Indicador analizado</h2>
+    <p>Se utilizaron datos simulados basados en las estadísticas del INE sobre el nivel de escolaridad promedio en distintos años en Guatemala.</p>
+    
+    <canvas id="regression-chart"></canvas>
+
+    <div id="regression-results" class="highlight"></div>
+    <p id="regression-conclusion">Calculando conclusión...</p>
+
+    <a href="arbol-decision.html" class="btn">Ir a Árbol de Decisión</a>
+  </div>
+
+  <footer>
+    Fuente: Instituto Nacional de Estadística - Guatemala
+  </footer>
+
+  <script src="regresion.js"></script>
+</body>
+</html>
